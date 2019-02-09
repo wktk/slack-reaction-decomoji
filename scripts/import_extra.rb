@@ -67,6 +67,7 @@ class Importer
         token: token
       }
       agent.post("https://#{team_name}.slack.com/api/emoji.add", params)
+      sleep 2
     end
   end
 
